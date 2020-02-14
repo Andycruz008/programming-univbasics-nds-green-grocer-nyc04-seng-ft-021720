@@ -89,3 +89,7 @@ def apply_coupon_to_cart(matching_item, coupon, cart)
   cart << item_with_coupon
 end
 
+
+def items_total_cost(i)
+  i[:count] * i[:price]
+end
